@@ -443,6 +443,9 @@ fieldset input[type="radio"]:checked::before {
     text-align: center;
   }
 
+  #step-9 {
+    max-width: 60%;
+  }
 
 }
 
@@ -514,9 +517,10 @@ fieldset input[type="radio"]:checked::before {
   }
 
   #step-9 {
-    top: 5%;
+    top: 20%;
     left: 3rem;
-    max-width: 40%;
+    max-width: 35%;
     text-align: left;
+    font-size: 1.25rem;
   }
 }
