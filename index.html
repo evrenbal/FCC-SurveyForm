@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Free Code Camp Survey Form</title>
+    <meta charset="UTF-8"/>
+    <meta lang="en"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta keywords="FreeCodeCamp, FCC, Survey Form">
+    <meta descripption="This is a sample form built for freeCodeCamp Survey Form assignment">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <main class="step-0">
+      <section id="step-0" class="transition-pos">
+        <h1 id="title">
+          FreeCodeCamp Survey Form
+        </h1>
+        <p id="description">
+          This is a sample survey form developed for <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank">FreeCodeCamp Responsive Web Development Certification Assignment</a>.
+          Be aware that this is a dummy form and cannot be submitted.
+        </p>
+        <p id="description">
+          Feedbacks are more than welcome!<br>Contact me at <a href="https://www.linkedin.com/in/benevrenbal" target="_blank">LinkedIn</a>, 
+          <a href="https://www.twitter.com/benevrenbal" target="_blank">Twitter</a>, or <a href="https://www.github.com/evrenbal/" target="_blank">GitHub</a>.
+        </p>
+
+        <div class="button-holder">
+          <button class="next">Next</button>
+          <label>or Press Enter</label>
+        </div>
+
+        <div class="photo-credits">
+          Photo by <a href="https://www.pexels.com/@goumbik" rel="nofollow" target="_blank">Lukas</a> from
+          <a href="https://www.pexels.com" rel="nofollow" target="_blank">Pexels</a>
+        </div>
+
+        
+      </section>      
+
+      <form id="survey-form">
+
+        <section id="step-1" class="out transition-pos">
+          <label for="name" id="name-label" class="label">1. What is your name?</label>
+          <input type="text" id="name" name="name" class="input-text focus" placeholder="Enter your name" required/>
+          <div class="button-holder">
+            <button class="prev button">Previous</button>
+            <button class="next button">Next</button>
+            <label>or Press Enter</label>
+          </div>
+          <div class="error">Please enter your name!</div>
+          <div class="photo-credits">
+            Photo by <a href="https://www.pexels.com/@andreea-ch-371539" rel="nofollow" target="_blank">Andreea Ch</a> from
+            <a href="https://www.pexels.com" rel="nofollow" target="_blank">Pexels</a>
+          </div>
+        </section>
+
+        <section id="step-2" class="out transition-pos">
+          <label for="email" id="email-label" class="label">2. What is your email address?</label>
+          <input type="email" id="email" name="email" class="input-text focus" placeholder="Enter your email address" required/>
+          <div class="button-holder">
+            <button class="prev button">Previous</button>
+            <button class="next button">Next</button>
+            <label>or Press Enter</label>
+          </div>
+          <div class="error">Please enter a valid e-mail address!</div>
+          <div class="photo-credits">
+            Photo by <a href="https://www.pexels.com/@cottonbro" rel="nofollow" target="_blank">cottonbro</a> from
+            <a href="https://www.pexels.com" rel="nofollow" target="_blank">Pexels</a>
+          </div>
+
+        </section>
+
+        <section id="step-3" class="out transition-pos">
+          <label for="number" id="number-label" class="label">3. Your Development Experience?</label>
+          <input type="number" id="number" name="number" class="input-text focus" placeholder="Years of experience" min="0" max="30" required/>
+          <div class="button-holder">
+            <button class="prev button">Previous</button>
+            <button class="next button">Next</button>
+            <label>or Press Enter</label>
+          </div>
+          <div class="error">Please enter a number between 0 and 30!</div>
+          <div class="photo-credits">
+            Photo by <a href="https://www.pexels.com/@karolina-grabowska" rel="nofollow" target="_blank">Karolina Grabowska</a> from
+            <a href="https://www.pexels.com" rel="nofollow" target="_blank">Pexels</a>
+          </div>
+        </section>
+
+        <section id="step-4" class="out transition-pos">
+          <label class="label">4. Which option best describes your current role?</label>
+          <select id="dropdown" name="dropdown" class="input-select focus">
+            <option value="0">Select your current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Job</option>
+            <option value="4">Full Time Learner</option>
+            <option value="5">Prefer Not to Say</option>
+            <option value="6">Other</option>
+         </select>
+          <div class="button-holder">
+            <button class="prev button">Previous</button>
+            <button class="next button">Next</button>
+            <label>or Press Enter</label>
+          </div>
+          <div class="error">Please select your role!</div>
+          <div class="photo-credits">
+            Photo by <a href="https://www.pexels.com/@scottwebb" rel="nofollow" target="_blank">Scott Webb</a> from
+            <a href="https://www.pexels.com" rel="nofollow" target="_blank">Pexels</a>
+          </div>
+
+        </section>
+
+        <section id="step-5" class="out transition-pos">
+          <label class="label">5. Would you recommend freeCodeCamp to a friend?</label>
+
+          <fieldset>
+            <input type="radio" name="recommend" value="1" id="recommend-1" class="focus"><label for="recommend-1">Definitely</label>
+            <input type="radio" name="recommend" value="2" id="recommend-2"><label for="recommend-2">Maybe</label>
+            <input type="radio" name="recommend" value="3" id="recommend-3"><label for="recommend-3">Not sure</label>
+          </fieldset>
+
+          <div class="button-holder">
+            <button class="prev button">Previous</button>
+            <button class="next button">Next</button>
+            <label>or Press Enter</label>
+          </div>
+
+          <div class="error">Please select an option!</div>
+
+          <div class="photo-credits">
+            Photo by <a href="https://www.pexels.com/@karolina-grabowska" rel="nofollow" target="_blank">Karolina Grabowska</a> from
+            <a href="https://www.pexels.com" rel="nofollow" target="_blank">Pexels</a>
+          </div>
+
+        </section>
+        
+        <section id="step-6" class="out transition-pos">
+          <label class="label">6. What is your favorite feature of freeCodeCamp?</label>
+          <select id="dropdown-2" name="dropdown-2" class="input-select focus">
+            <option value="0">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+         </select>
+          <div class="button-holder">
+            <button class="prev button">Previous</button>
+            <button class="next button">Next</button>
+            <label>or Press Enter</label>
+          </div>
+
+          <div class="error">Please select an option!</div>
+
+          <div class="photo-credits">
+            Photo by <a href="https://www.pexels.com/@mariana-kurnyk-844465" rel="nofollow" target="_blank">Mariana Kurnyk</a> from
+            <a href="https://www.pexels.com" rel="nofollow" target="_blank">Pexels</a>
+          </div>
+
+        </section>        
+
+
+        <section id="step-7" class="out transition-pos">
+          <label class="label">7. What would you like to see improved?</label>
+          <p class="paragraph">(Check all that apply)</p>
+
+          <fieldset class="focus">
+            <div><input type="checkbox" value="1" id="improvement-1" class="focus"><label for="improvement-1">Front-end Projects</label></div>
+            <div><input type="checkbox" value="2" id="improvement-2"><label for="improvement-2">Back-end Projects</label></div>            
+            <div><input type="checkbox" value="3" id="improvement-3"><label for="improvement-3">Data Visualization</label></div>
+            <div><input type="checkbox" value="4" id="improvement-4"><label for="improvement-4">Challenges</label></div>
+            <div><input type="checkbox" value="5" id="improvement-5"><label for="improvement-5">Open Source Community</label></div>
+            <div><input type="checkbox" value="6" id="improvement-6"><label for="improvement-6">Gitter help rooms</label></div>
+            <div><input type="checkbox" value="7" id="improvement-7"><label for="improvement-7">Videos</label></div>
+            <div><input type="checkbox" value="8" id="improvement-8"><label for="improvement-8">City Meetups</label></div>
+            <div><input type="checkbox" value="9" id="improvement-9"><label for="improvement-9">Wiki</label></div>
+            <div><input type="checkbox" value="10" id="improvement-10"><label for="improvement-10">Forum</label></div>
+            <div><input type="checkbox" value="11" id="improvement-11"><label for="improvement-11">Additional Courses</label></div>
+          </fieldset>
+
+          <div class="button-holder">
+            <button class="prev button">Previous</button>
+            <button class="next button">Next</button>
+            <label>or Press Enter</label>
+          </div>
+
+          <div class="error">Please check at least one option!</div>
+
+          <div class="photo-credits">
+            Photo by <a href="https://www.pexels.com/@element5" rel="nofollow" target="_blank">Element5 Digital</a> from
+            <a href="https://www.pexels.com" rel="nofollow" target="_blank">Pexels</a>
+          </div>
+
+        </section>        
+
+        <section id="step-8" class="out transition-pos">
+          <label for="comments" class="label">8. Any comments or suggestions?</label>
+          <textarea id="comments" name="comments" class="input-text focus" placeholder="Enter your comment here"></textarea>
+          <div class="button-holder">
+            <button class="prev button">Previous</button>
+            <button class="next button" id="submit">Submit Form</button>
+          </div>
+
+          <div class="photo-credits">
+            Photo by <a href="https://www.pexels.com/@jckulkarni" rel="nofollow" target="_blank">Jayant Kulkarni</a> from
+            <a href="https://www.pexels.com" rel="nofollow" target="_blank">Pexels</a>
+          </div>
+        </section>        
+
+        <section id="step-9" class="out transition-pos">
+
+          <h1 id="title">
+            Thank you!
+          </h1>
+          <p id="description">
+            This is a dummy form and cannot be submitted, because it is a sample survey form developed for <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank" class="step-a">FreeCodeCamp Responsive Web Development Certification Assignment</a>.
+          </p>
+          <p id="description">
+            Feedbacks are more than welcome!<br>Contact me at <a href="https://www.linkedin.com/in/benevrenbal" target="_blank" class="step-a">LinkedIn</a>, 
+            <a href="https://www.twitter.com/benevrenbal" target="_blank" class="step-a">Twitter</a>, or <a href="https://www.github.com/evrenbal/" target="_blank" class="step-a">GitHub</a>.
+          </p>
+  
+          <div class="button-holder">
+            <button class="prev button">Previous</button>
+            <button class="next button">Reset Form</button>
+          </div>
+
+          <div class="photo-credits">
+            Photo by <a href="https://www.pexels.com/@abhilashsahoo" rel="nofollow" target="_blank">Abhilash Sahoo</a> from
+            <a href="https://www.pexels.com" rel="nofollow" target="_blank">Pexels</a>
+          </div>
+        </section>        
+
+      </form>
+    </main>    
+
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+   <script src="func.js" defer></script>
+
+  </body>
+</html>

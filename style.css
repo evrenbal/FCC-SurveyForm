@@ -1,0 +1,522 @@
+@import 'normalize.css';
+body {
+  font-family: Montserrat, Roboto, "Helvatica Neue";
+  overflow: hidden;
+}
+
+:root {
+  --primary-color: #559ddb;
+  --primary-text: #faffff;
+  --secondary-color: #aaccdd;
+  --secondary-text: #fcf8ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mt-5, .my-5 { margin-top: 6.25rem; }
+.mb-5, .my-5 { margin-bottom: 6.25rem; }
+.pt-5, .py-5 { padding-top: 6.25rem; }
+.pb-5, .py-5 { padding-bottom: 6.25rem; }
+
+.mt-3, .my-3 { margin-top: 3.75rem; }
+.mb-3, .my-3 { margin-bottom: 3.75rem; }
+.pt-3, .py-3 { padding-top: 3.75rem; }
+.pb-3, .py-3 { padding-bottom: 3.75rem; }
+
+
+.bg-white {background-color: #fff;}
+.bg-gray {background-color: #f5f5f5;}
+.bg-black {background-color: #000000;}
+.text-center {text-align: center;}
+.text-white {color: #ffffff;}
+.text-white a {color: #e0e0e0;}
+.uppercase {text-transform: uppercase;}
+.hidden {display:none;}
+.block {display:block;}
+.flex {display:flex;}
+.transition-pos {
+  transition: all 1s ease;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-size:cover;
+  transition: all 1s ease;
+}
+
+main h1 {
+  margin-top: 0;
+}
+
+.button-holder {
+  background-color: var(--secondary-color);
+  color: var(--secondary-text);
+  display: inline-block;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;  
+}
+
+.button-holder label {
+  margin-left: 0.75rem;
+  margin-right: 1rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+  font-weight: 800;
+  padding: 0.5rem 2rem;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#step-0 h1, .label { font-size: 3em; font-weight: 800; }
+
+#step-0 p, .paragraph { font-size: 1.5em; } 
+
+#step-0 button, .button { font-size: 1.25em; }
+
+#step-0 a, .step-a { color: #000; text-decoration: underline; font-weight: 400; }
+
+main.step-0, main.step-9 {
+  background-image:url("img/pexels-lukas-1420709.jpg");
+  background-position: top right;
+}
+
+#step-0 {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+#step-0.out {
+  right: 200vw !important;
+}
+
+
+main.step-1 {
+  background-image: url('img/pexels-photo-1166643.jpeg');
+  background-position: top left;
+}
+
+main.step-2 {
+  background-image: url('img/pexels-cottonbro-3661242.jpg');
+  background-position: bottom center;
+}
+
+main.step-3 {
+  background-image: url('img/pexels-karolina-grabowska-5208257.jpg');
+  background-position: top center;
+}
+
+main.step-4 {
+  background-image: url('img/pexels-scott-webb-1022923.jpg');
+  background-position: top left;
+}
+
+main.step-5 {
+  background-image: url('img/pexels-karolina-grabowska-4226802.jpg');
+  background-position: center left;
+}
+
+main.step-6 {
+  background-image: url('img/pexels-mariana-kurnyk-1775029.jpg');
+  background-position: bottom left;
+}
+
+main.step-7 {
+  background-image: url('img/pexels-element-digital-1470162.jpg');
+  background-position: center left;
+}
+
+main.step-8 {
+  background-image: url('img/pexels-jayant-kulkarni-910213.jpg');
+  background-position: center left;
+}
+
+main.step-9 {
+  background-image: url('img/pexels-abhilash-sahoo-4157621.jpg');
+  background-position: top left;
+}
+
+#step-1 {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#step-1.out {
+  left: 200vw !important;
+}
+
+#step-2 {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  padding: 0 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+
+#step-2.out {
+  left: -200vw;
+}
+
+#step-3 {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#step-3.out {
+  left: 200vw;
+}
+
+#step-4 {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#step-4.out {
+  left: -200vw;
+}
+
+
+#step-5 {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#step-5.out {
+  left: 200vw;
+}
+
+
+#step-6 {
+  position: absolute;
+  bottom: 20%;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#step-6.out {
+  left: -200vw;
+}
+
+#step-7 {
+  position: absolute;
+  top: 15%;
+  text-align: left;
+  left: 5%;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#step-7.out {
+  left: 200vw;
+}
+
+
+#step-8 {
+  position: absolute;
+  top: 10%;
+  text-align: left;
+  left: 5%;
+  width: 90%;
+  font-size: 1rem;
+}
+
+#step-8.out {
+  left: -200vw;
+}
+
+#step-8 .input-text {
+  text-align: left;
+  border: 1px solid #eee;
+  border-bottom-color: #aaa;
+  height: 10rem;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.1);
+  resize:vertical;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#step-9 {
+  position: absolute;
+  top: 10%;
+  text-align: left;
+  left: 5%;
+  width: 90%;
+  font-size: 1rem;
+}
+
+#step-9.out {
+  left: 200vw;
+}
+
+
+
+fieldset {
+  border: 0;
+}
+
+fieldset label {
+  margin: 0 1rem 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+
+fieldset input[type="radio"]
+{
+  background-color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index:10;
+  transform: translateY(0.15rem);  
+}
+
+fieldset input[type="checkbox"]
+{
+  background-color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index:10;
+  transform: translateY(0.15rem);  
+}
+
+fieldset input[type="radio"]:checked::before {
+  position: absolute;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem 0.25rem rgba(0,0,0,0.15);
+  z-index:1;
+}
+
+.error {
+  position: relative;
+  padding: 1rem 1rem 1rem 0;
+  left: 100vw;
+  transition: all 0.25s ease-in;
+}
+
+.failure .error {
+  color: #a00;
+  left: 0;
+  font-weight: 600;
+}
+
+.failure .input-text, .failure .input-select {
+  border-bottom-color: #a00;
+}
+
+.label {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.input-text {
+  width: 100%;
+  font-size: 2em;
+  border: 0;
+  border-bottom: 2px solid #ddd;
+  background-color: transparent;
+  padding: 1rem 0;
+  text-align: center;
+  outline: none;
+  font-weight: 600;
+}
+
+.input-select {
+  width: 100%;
+  font-size: 2em;
+  border: 0;
+  border-bottom: 2px solid #ddd;
+  background-color: transparent;
+  padding: 1rem 0;
+  text-align: center;
+  outline: none;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+}
+
+.photo-credits {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color:rgba(255,255,255,0.3);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px 3px rgba(0,0,0, 0.1);
+}
+
+#step-7 .photo-credits {
+  right: unset;
+  left: 1rem;
+}
+
+.out .photo-credits {
+  left: unset !important;
+  right: 105vw !important;
+}
+
+.photo-credits a {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  #step-0 {
+    top: 40%;
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+  
+  #step-1 {
+    top: 20%;
+  }
+
+  #step-3 {
+    top: 50%;
+    left: 10%;
+    width: 80%;
+  }
+
+
+  #step-4 {
+    top: 35%;
+    left: 10%;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  #step-5 {
+    top: 20%;
+    left: 5%;
+    max-width: 75%;
+    text-align: center;
+  } 
+
+
+  #step-6 {
+    top: unset;
+    bottom: 15%;
+    left: 5%;
+    max-width: 75%;
+    text-align: center;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+  #step-0 {
+    top: 45%;
+    right: 2%;
+    max-width: 960px;
+    text-align: right;
+  }
+
+  #step-1 {
+    top: 30%;
+    left: 5%;
+    max-width: 750px;
+    text-align: left;
+  }
+
+  #step-1 .input-text {
+    text-align:left;
+  }
+
+  #step-0 p {
+    width: 100%;
+  }
+
+  #step-2 {
+    top: 20%;
+    left: 25%;
+    max-width: 50%;
+    text-align: center;
+  }
+
+  #step-3 {
+    top: 35%;
+    left: 10%;
+    max-width: 50%;
+    text-align: center;
+  }
+
+  #step-4 {
+    top: 25%;
+    left: 25%;
+    max-width: 50%;
+    text-align: center;
+  }
+
+
+  #step-5 {
+    top: 25%;
+    left: 5%;
+    max-width: 50%;
+    text-align: center;
+  }
+
+  #step-6 {
+    top: unset;
+    bottom: 25%;
+    left: 5%;
+    max-width: 50%;
+    text-align: center;
+  }
+
+  #step-7 {
+    top: 15%;
+    left: 3rem;
+    max-width: 40%;
+    text-align: left;
+  }
+
+  #step-9 {
+    top: 5%;
+    left: 3rem;
+    max-width: 40%;
+    text-align: left;
+  }
+}
